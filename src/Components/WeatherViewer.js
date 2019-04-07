@@ -51,7 +51,8 @@ class App extends Component {
 
         this.setState({
           description: descript,
-          title: title
+          title: title,
+          id: id
         })
       }, () => {
         this.setState({
@@ -62,7 +63,8 @@ class App extends Component {
 
 
   render() {
-    if(requestFailed) {
+    console.log(this.state.id);
+    if(this.state.requestFailed) {
       return <div><h1>Unfortunately your request failed</h1></div>
     } else {
       return (

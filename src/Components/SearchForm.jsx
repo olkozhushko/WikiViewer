@@ -14,7 +14,7 @@ const SearchForm = ({onChange, value, onSubmit}) => {
         placeholder="search..."/>
       <button 
         type="submit" 
-        className="search-btn">
+        className="search-field__btn">
         <i className="fas fa-search"></i>
       </button>
     </form>
