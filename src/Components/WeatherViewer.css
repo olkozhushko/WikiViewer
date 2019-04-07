@@ -1,1 +1,17 @@
+.weather-app {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(71, 71, 121);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-field {
+  width: 40%;
+  height: 40px;
+}
+
+
+
 
