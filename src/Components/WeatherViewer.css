@@ -1,15 +1,68 @@
 .weather-app {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 4rem;
   background: rgb(71, 71, 121);
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .search-field {
-  width: 40%;
+  width: 60%;
   height: 40px;
+  display: flex;
+}
+
+.search-field__input {
+  border: none;
+  padding: 0.3rem;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex-basis: 85%;
+  font: 1.3rem/1.2rem helvetica;
+}
+
+.search-field__btn {
+  flex-basis: 15%;
+  background: linear-gradient(45deg,#268ead, #22a9d2);
+  opacity: 1;
+  border-radius: 0.2rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  outline: none;
+  transition: all 0.4s;
+}
+
+.search-field__btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.list {
+  width: 60%;
+  padding: 1rem;
+  list-style: none;
+}
+
+.list__item {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.list__title {
+  margin-bottom: 0.5rem;
+  color: rgb(28, 132, 158);
+  text-transform: uppercase;
+}
+
+.list__text {
+  letter-spacing: 2px;
 }
 
 
