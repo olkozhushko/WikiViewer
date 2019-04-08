@@ -5,7 +5,7 @@ const List = ({title, description, id}) => {
   for (let i = 0; i < id.length; i++) {
     items.push(<ListItem key={id[i]} title={title[i]} description={description[i]}/>);
   }
-  
+
   return (
     <ul className="list">
       {items}
@@ -18,8 +18,10 @@ const ListItem = ({title, description}) => {
   console.log(title);
   return (
     <li className="list__item">
-      <h3 className="list__title">{title}</h3>
-      <p className="list__text">{description.replace(/<.*?>/ig, "")}</p>
+      <a href={encodeURI(`https://en.wikipedia.org/wiki/${title}`)} target="_blank" rel="noopener noreferrer" className="list__link">
+        <h3 className="list__title">{title}</h3>
+        <p className="list__text">{description.replace(/<.*?>/ig, "").replace(/&quot;/ig, '"')}</p>
+      </a>
     </li>
   )
 }

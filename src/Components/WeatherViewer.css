@@ -41,6 +41,11 @@
   opacity: 0.6;
 }
 
+.fa-search {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
 .list {
   width: 60%;
   padding: 1rem;
@@ -55,15 +60,32 @@
   margin-bottom: 10px;
 }
 
+.list__link {
+  text-decoration: none;
+}
+
 .list__title {
   margin-bottom: 0.5rem;
-  color: rgb(28, 132, 158);
+  color: rgb(46, 45, 46);
   text-transform: uppercase;
 }
 
 .list__text {
   letter-spacing: 2px;
+  color: rgb(36, 33, 33);
 }
+
+@media screen and (max-width: 780px) {
+
+   .search-field {
+     width: 90%;
+   }
+
+   .list {
+     width: 90%;
+   }
+}
+
 
 
 
