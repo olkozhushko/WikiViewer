@@ -1,4 +1,6 @@
-## Available Scripts
+#WikiViewer
+
+## Simple app for searching whatever article you want on wikipedia with the the help of wiki API.
 
 In the project directory, you can run:
 
